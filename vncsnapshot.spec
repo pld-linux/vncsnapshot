@@ -15,7 +15,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 VNC Snapshot is a command-line program for VNC. It will save a JPEG
-image of the VNC server's screen.   
+image of the VNC server's screen.
 
 %description -l pl
 VNC Snapshot jest dzia³aj±cym z linii poleceñ narzêdziem dla VNC.
