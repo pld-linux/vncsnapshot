@@ -1,12 +1,12 @@
 Summary:	Command line program for save JPEG image of VNC server's screen
 Summary(pl):	Dzia³aj±cy z linii poleceñ program do robienia zrzutów ekranu z serwera VNC
 Name:		vncsnapshot
-Version:	1.1
-Release:	2
+Version:	1.2a
+Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://dl.sourceforge.net/vncsnapshot/%{name}-%{version}-src.tar.bz2
-# Source0-md5:	d526e821eef087e89eebde57f3e02a4a
+# Source0-md5:	6abf3c0c5bbfde70d51fa09edfb717da
 URL:		http://vncsnapshot.sourceforge.net/
 BuildRequires:	libjpeg-devel
 BuildRequires:	libstdc++-devel
