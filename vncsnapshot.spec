@@ -1,11 +1,11 @@
 Summary:	Command line program for save JPEG image of VNC server's screen
-Summary(pl):	Program z lini poleceñ do robienia zrzutów ekranu z serwera VNC
+Summary(pl):	Dzia³aj±cy z linii poleceñ program do robienia zrzutów ekranu z serwera VNC
 Name:		vncsnapshot
 Version:	1.1
 Release:	2
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://dl.sourceforge.net/sourceforge/vncsnapshot/%{name}-%{version}-src.tar.bz2
+Source0:	http://dl.sourceforge.net/vncsnapshot/%{name}-%{version}-src.tar.bz2
 # Source0-md5:	d526e821eef087e89eebde57f3e02a4a
 URL:		http://vncsnapshot.sourceforge.net/
 BuildRequires:	libjpeg-devel
@@ -18,14 +18,15 @@ VNC Snapshot is a command-line program for VNC. It will save a JPEG
 image of the VNC server's screen.   
 
 %description -l pl
-VNC Snapshot jest narzêdziem z lini poleceñ dla VNC. Zachowuje obraz
-ekranu serwera VNC w pliku JPEG.
+VNC Snapshot jest dzia³aj±cym z linii poleceñ narzêdziem dla VNC.
+Zachowuje obraz ekranu serwera VNC w pliku JPEG.
 
 %prep
 %setup -q
 
 %build
-%{__make} CDEBUGFLAGS="%{rpmcflags}"
+%{__make} \
+	CDEBUGFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
