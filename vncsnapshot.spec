@@ -1,5 +1,5 @@
 Summary:	Command line program for save JPEG image of VNC server's screen
-Summary(pl.UTF-8):   Działający z linii poleceń program do robienia zrzutów ekranu z serwera VNC
+Summary(pl.UTF-8):	Działający z linii poleceń program do robienia zrzutów ekranu z serwera VNC
 Name:		vncsnapshot
 Version:	1.2a
 Release:	1
