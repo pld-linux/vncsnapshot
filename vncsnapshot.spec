@@ -7,6 +7,7 @@ License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://dl.sourceforge.net/vncsnapshot/%{name}-%{version}-src.tar.bz2
 # Source0-md5:	6abf3c0c5bbfde70d51fa09edfb717da
+Patch0:		%{name}-fprintf.patch
 URL:		http://vncsnapshot.sourceforge.net/
 BuildRequires:	libjpeg-devel
 BuildRequires:	libstdc++-devel
@@ -23,9 +24,12 @@ Zachowuje obraz ekranu serwera VNC w pliku JPEG.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__make} \
+	CC="%{__cc}" \
+	CXX="%{__cxx}" \
 	CDEBUGFLAGS="%{rpmcflags}"
 
 %install
