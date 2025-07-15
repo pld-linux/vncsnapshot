@@ -24,7 +24,7 @@ Zachowuje obraz ekranu serwera VNC w pliku JPEG.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__make} \
